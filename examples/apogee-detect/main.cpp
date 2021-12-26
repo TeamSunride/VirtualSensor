@@ -23,11 +23,13 @@ void setup() {
     Serial.println("Connecting to barometer");
 
     barometer.connect();
+
+    VirtualSensor::setup();
 }
 
 void loop() {
     float pressure = barometer.getPressure();
-    barometer.println(String("Simulated pressure!!!!: ") + pressure);
+    barometer.println(String("Simulated pressure: ") + pressure);
 
     if (pressure <= lowest_pressure) {
         lowest_pressure = pressure;

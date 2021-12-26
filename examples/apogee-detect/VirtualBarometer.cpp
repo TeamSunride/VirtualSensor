@@ -12,23 +12,7 @@ bool VirtualBarometer::connect()
 {
     println("Starting I2C communication.");
     sensor.setI2CAddress(0x76);
-    if (sensor.beginI2C())
-    { // Begin communication over I2C
-        isConnected = true;
-    }
-    else
-    {
-        isConnected = false;
-        println("The sensor did not respond. Please check wiring.");
-        if (connectionAttempts < totalReconnectAttempts)
-        {
-            ++connectionAttempts;
-            delay(50);
-            println(String("Attempting reconnect (") + connectionAttempts + String("/") + totalReconnectAttempts + String(")"));
-            connect();
-        }
-    }
-    return isConnected;
+    sensor.beginI2C();
 }
 
 // Returns temperature in a range between -40 and 85°C
