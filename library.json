@@ -1,0 +1,18 @@
+{
+    "name": "VirtualSensor",
+    "version": "1.0.0",
+    "description": "A library designed to simulate inputs from sensors to run tests of algorithms, such as apogee detection on a rocket.",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/TeamSunride/VirtualSensor.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Tom Danvers"
+      }
+    ],
+    "frameworks": "arduino",
+    "platforms": "*"
+  }
