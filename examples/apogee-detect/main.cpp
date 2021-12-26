@@ -9,8 +9,6 @@ VirtualBarometer barometer = VirtualBarometer();
 float lowest_pressure;
 bool apogee_detected;
 
-void(* resetFunc) (void) = 0;
-
 void VirtualSensor::setup() {
     barometer.allowTesting();
     lowest_pressure = barometer.getPressure();
