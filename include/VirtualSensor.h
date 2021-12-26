@@ -9,7 +9,6 @@ class VirtualSensor {
         String name;
 
         String manufacturer = "UNKNOWN";
-        bool isConnected = false;
         
         void println(String s);
         void allowTesting();
