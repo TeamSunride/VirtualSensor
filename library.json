@@ -1,7 +1,7 @@
 {
     "name": "VirtualSensor",
     "version": "1.0.0",
-    "description": "A library designed to simulate inputs from sensors to run tests of algorithms, such as apogee detection on a rocket.",
+    "description": "A library designed to simulate inputs from sensors to run testing of scenarios that would otherwise be difficult to test.",
     "repository":
     {
       "type": "git",
