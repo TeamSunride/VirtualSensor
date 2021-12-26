@@ -187,6 +187,18 @@ void loop() {
 }
 ```
 
+Example `platformio.ini` file:
+```ini
+[env:teensy]
+platform = teensy
+board = teensy41
+framework = arduino
+lib_deps = sparkfun/SparkFun BME280@^2.0.9
+           https://github.com/TeamSunride/VirtualSensor.git
+upload_protocol=teensy-cli
+build_flags = -D VIRTUALSENSOR  ; necessary if using a teensy (TODO: rename this to something better)
+```
+
 You can view the full C++ example [here](/lib/VirtualSensor/examples/apogee-detect)
 
 In order to pass data to the VirtualSensor, we need to use the [pyVirtualSensor](https://github.com/TeamSunride/pyVirtualSensor) library. 
