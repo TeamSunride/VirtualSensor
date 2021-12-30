@@ -8,7 +8,7 @@ VirtualBarometer::VirtualBarometer()
     name = "BME280";
 }
 
-bool VirtualBarometer::connect()
+void VirtualBarometer::connect()
 {
     println("Starting I2C communication.");
     sensor.setI2CAddress(0x76);

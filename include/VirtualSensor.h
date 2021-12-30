@@ -14,6 +14,7 @@ class VirtualSensor {
         void allowTesting();
 
         static void broadcastEvent(String eventName);
+        static void logValue(String columnName, float value);
         static void setup();
         bool isTesting();
     protected:

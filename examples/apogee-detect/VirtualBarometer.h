@@ -5,7 +5,7 @@
 
 class VirtualBarometer : public VirtualSensor {
     public:
-        bool connect();             // method to connect to the sensor using BME280 library
+        void connect();             // method to connect to the sensor using BME280 library
         VirtualBarometer();         // constructor method
 
         float getTemperature();     // method to get temperature

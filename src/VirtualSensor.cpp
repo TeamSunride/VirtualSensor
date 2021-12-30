@@ -55,3 +55,7 @@ bool VirtualSensor::isTesting() {
     #endif
     return testMode;
 }
+
+void VirtualSensor::logValue(String columnName, float value) {
+    Serial.println(prefix + "LOGV" + sep + columnName + sep + value);
+}
